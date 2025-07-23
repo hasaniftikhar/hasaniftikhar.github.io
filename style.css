@@ -32,9 +32,10 @@ h2 {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 1rem;
   margin-top: 1rem;
+  padding: 1rem;
 }
 
 .project-card {
@@ -44,7 +45,26 @@ h2 {
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
   text-align: center;
+  transition: transform 0.2s ease;
 }
+
+.project-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  object-fit: contain;
+}
+
+.project-card:hover {
+  transform: scale(1.02);
+}
+
+.project-card p {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  word-break: break-word;
+}
+
 
 ul {
   list-style-type: square;

@@ -2,63 +2,181 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hasan Iftikhar | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hasan Iftikhar - Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f6f6f6;
+    }
+
+    nav {
+      background-color: #111;
+      padding: 1em 0;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 999;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin: 0 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    .section {
+      display: none;
+      max-width: 800px;
+      margin: 100px auto 40px auto;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .section.active {
+      display: block;
+    }
+
+    .about-content {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .about-content img.profile-photo {
+      width: 180px;
+      height: 180px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    .project-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .project-card {
+      flex: 1 1 200px;
+      background-color: #f9f9f9;
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 0 4px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .project-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    .skills li {
+      margin: 5px 0;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Hasan Iftikhar</h1>
-    <p>Graphic Designer Intern & Computer Engineering Student</p>
-  </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I’m a Computer Engineering student from Jamia Millia Islamia with a passion for graphic design. This is a showcase of my projects combining design and tech.</p>
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="#" onclick="showSection('about')">Home</a></li>
+      <li><a href="#" onclick="showSection('education')">Education</a></li>
+      <li><a href="#" onclick="showSection('portfolio')">Design Portfolio</a></li>
+      <li><a href="#" onclick="showSection('skills')">Skills</a></li>
+      <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Sections -->
+  <section id="about" class="section active">
+    <div class="about-content">
+      <img src="images/hasan.jpg" alt="Hasan Iftikhar" class="profile-photo" />
+      <div>
+        <h1>Hi, I'm Hasan Iftikhar</h1>
+        <p>
+          I'm a Computer Engineering student at Jamia Millia Islamia, New Delhi, with a deep passion for design and creativity. Whether it’s crafting sleek posters, modern logos, or intuitive interfaces, I enjoy blending tech and visuals to tell stories that resonate. I’m always exploring ways to merge my technical skills with artistic vision — welcome to my portfolio!
+        </p>
+      </div>
+    </div>
   </section>
 
-  <section id="projects">
-  <h2>My Work</h2>
-  <div class="grid">
-    
-    <div class="project-card">
-      <img src="images/board.jpeg" alt="Banner - Clean & Steam" />
-      <p>Banner – Clean & Steam</p>
+  <section id="education" class="section">
+    <h2>Education</h2>
+    <p><strong>B.Tech in Computer Engineering</strong><br/>
+      Jamia Millia Islamia, New Delhi<br/>
+      2022 – 2026 (Expected)</p>
+    <br/>
+    <p><strong>AISSCE (Class 12th)</strong><br/>
+      Delhi Public School, Mathura Road<br/>
+      2022</p>
+  </section>
+
+  <section id="portfolio" class="section">
+    <h2>Design Portfolio</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="images/board.jpeg" alt="Banner - Clean & Steam" />
+        <p>Banner – Clean & Steam</p>
+      </div>
+      <div class="project-card">
+        <img src="images/taxi.jpg" alt="Pamphlet – Elegant Travels" />
+        <p>Pamphlet – Elegant Travels</p>
+      </div>
+      <div class="project-card">
+        <img src="images/welcomev4.png" alt="Pamphlet – WelcomeCom V4" />
+        <p>Pamphlet – WelcomeCom V4</p>
+      </div>
     </div>
+  </section>
 
-    <div class="project-card">
-      <img src="images/elegant.jpg" alt="Pamphlet - Elegant Travels" />
-      <p>Pamphlet – Elegant Travels</p>
-    </div>
-
-    <div class="project-card">
-      <img src="images/poster.jpg" alt="Poster - Velocicomm-V4" />
-      <p>Pamphlet – Velocicomm-V4</p>
-    </div>
-    <!-- Add more cards here -->
-    
-  </div>
-</section>
-
-
-  <section id="skills">
+  <section id="skills" class="section">
     <h2>Skills</h2>
-    <ul>
-      <li>Graphic Design (Photoshop, Canva, Figma)</li>
-      <li>HTML, CSS, Python, C++</li>
-      <li>Git & GitHub</li>
+    <ul class="skills">
+      <li>Graphic Design: Photoshop, Canva, Figma</li>
+      <li>Frontend: HTML, CSS, JavaScript</li>
+      <li>Programming: Python, C++</li>
+      <li>Version Control: Git & GitHub</li>
     </ul>
   </section>
 
-  <section id="contact">
+  <section id="contact" class="section">
     <h2>Contact</h2>
-    <p>Email: hasan2407743@st.jmi.ac.in</p>
-    <p>GitHub: <a href="https://github.com/hasaniftikhar" target="_blank">hasaniftikhar</a></p>
+    <p>Email: hasan@example.com</p>
+    <p>Phone: +91 9876543210</p>
+    <p>GitHub: <a href="https://hasaniftikhar.github.io" target="_blank">hasaniftikhar.github.io</a></p>
   </section>
 
-  <footer>
-    <p>© 2025 Hasan Iftikhar</p>
-  </footer>
+  <!-- JavaScript to control section visibility -->
+  <script>
+    function showSection(id) {
+      const sections = document.querySelectorAll('.section');
+      sections.forEach(section => {
+        section.classList.remove('active');
+      });
+      document.getElementById(id).classList.add('active');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+
 </body>
 </html>

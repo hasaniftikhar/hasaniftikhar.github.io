@@ -4,11 +4,67 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hasan Iftikhar | Tech & Design Portfolio</title>
+  <title>Education | Hasan Iftikhar</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+  <style>
+    #education {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .section-heading {
+      font-size: 2.2rem;
+      margin-bottom: 30px;
+      color: #2c3e50;
+      text-align: center;
+    }
+
+    .education-entry {
+      background-color: #fefefe;
+      border-radius: 12px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+      padding: 25px 30px;
+      margin-bottom: 30px;
+      animation: fadeInUp 0.6s ease-in-out;
+    }
+
+    .education-entry h3 {
+      margin: 0 0 10px;
+      font-size: 1.4rem;
+      color: #1a237e;
+    }
+
+    .education-entry p {
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    .education-summary {
+      font-size: 1rem;
+      margin-top: 40px;
+      background: #f4f6f9;
+      border-left: 4px solid #1a73e8;
+      padding: 20px 24px;
+      border-radius: 8px;
+      animation: fadeInUp 0.8s ease-in-out;
+    }
+
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -22,19 +78,23 @@
     </ul>
   </nav>
 
-  <section id="education" class="about-section fade-in card-box">
-    <div>
-      <h1 class="section-heading">Education</h1>
-      <div class="education-entry card-3d fade-in">
-        <h3>B.Tech in Computer Engineering</h3>
-        <p><strong>Jamia Millia Islamia, New Delhi</strong><br />
-          2024 – 2028 (Pursuing)</p>
-      </div>
-      <div class="education-entry card-3d fade-in" style="animation-delay: 0.2s;">
-        <h3>AISSCE – Class XII, Science</h3>
-        <p><strong>Delhi Public School, Mathura Road</strong><br />
-          2012 – 2024</p>
-      </div>
+  <section id="education">
+    <h1 class="section-heading">Education</h1>
+
+    <div class="education-entry">
+      <h3>B.Tech in Computer Engineering</h3>
+      <p><strong>Jamia Millia Islamia, New Delhi</strong><br />
+        2024 – 2028 (Pursuing)</p>
+    </div>
+
+    <div class="education-entry" style="animation-delay: 0.2s;">
+      <h3>AISSCE – Class XII, Science</h3>
+      <p><strong>Delhi Public School, Mathura Road</strong><br />
+        2012 – 2024</p>
+    </div>
+
+    <div class="education-summary">
+      My academic journey has shaped both my logical thinking and creative instincts. At Jamia, I'm building strong foundations in programming, problem solving, and computer systems. School helped me balance science with communication and design — a blend that's now central to my interests in tech and graphics.
     </div>
   </section>
 

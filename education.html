@@ -13,14 +13,19 @@
 
 <body>
   <nav class="navbar">
-    <ul>
+  <div class="nav-container">
+    <div class="logo"></div>
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    <ul class="nav-links" id="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="education.html">Education</a></li>
-      <li><a href="portfolio.html">Design Portfolio</a></li>
       <li><a href="skills.html">Skills</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
-  </nav>
+  </div>
+</nav>
+
 
   <section class="about-section education-section fadeIn">
     <div class="container">
@@ -50,6 +55,15 @@
       </div>
     </div>
   </section>
+<script>
+  const toggleBtn = document.getElementById('menu-toggle');
+  const navLinks = document.getElementById('nav-links');
+
+  toggleBtn.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
+</script>
+
 </body>
 
 </html>

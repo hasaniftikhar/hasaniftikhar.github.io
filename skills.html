@@ -1,3 +1,4 @@
+<!-- skills.html -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,76 +6,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Skills | Hasan Iftikhar</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  <style>
-    #skills-section {
-      padding: 60px 20px;
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-
-    .section-heading {
-      font-size: 2.2rem;
-      margin-bottom: 30px;
-      color: #2c3e50;
-      text-align: center;
-    }
-
-    .skill-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-    }
-
-    .skill-card {
-      background-color: #fefefe;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
-      text-align: left;
-      font-weight: 500;
-      color: #1a237e;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      animation: fadeInUp 0.6s ease-in-out;
-    }
-
-    .skill-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
-    }
-
-    .skill-card a {
-      text-decoration: none;
-      color: inherit;
-      display: block;
-    }
-
-    .skill-title {
-      font-size: 1.2rem;
-      font-weight: 600;
-      margin-bottom: 8px;
-    }
-
-    .skill-desc {
-      font-size: 0.95rem;
-      color: #555;
-    }
-
-    @keyframes fadeInUp {
-      0% {
-        opacity: 0;
-        transform: translateY(30px);
-      }
-
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-  </style>
 </head>
 
 <body>
@@ -88,47 +23,48 @@
     </ul>
   </nav>
 
-  <section id="skills-section">
-    <h1 class="section-heading">Skills</h1>
-    <div class="skill-grid">
-      <div class="skill-card" style="animation-delay: 0s;">
-        <a href="https://www.python.org" target="_blank">
-          <div class="skill-title">Python</div>
-          <div class="skill-desc">Used for scripting, automation, and backend development. Familiar with data structures and OOP.</div>
-        </a>
-      </div>
-      <div class="skill-card" style="animation-delay: 0.1s;">
-        <a href="#" target="_blank">
-          <div class="skill-title">C++</div>
-          <div class="skill-desc">Strong understanding of algorithms and competitive programming foundations.</div>
-        </a>
-      </div>
-      <div class="skill-card" style="animation-delay: 0.2s;">
-        <a href="#" target="_blank">
-          <div class="skill-title">HTML / CSS / JS</div>
-          <div class="skill-desc">Web development experience creating interactive, responsive, and animated pages.</div>
-        </a>
-      </div>
-      <div class="skill-card" style="animation-delay: 0.3s;">
-        <a href="#" target="_blank">
-          <div class="skill-title">Graphic Design</div>
-          <div class="skill-desc">Skilled in Adobe Illustrator & Figma for vector work and layout composition.</div>
-        </a>
-      </div>
-      <div class="skill-card" style="animation-delay: 0.4s;">
-        <a href="#" target="_blank">
-          <div class="skill-title">Poster & Logo Making</div>
-          <div class="skill-desc">Designed multiple creative assets for college fests and digital campaigns.</div>
-        </a>
-      </div>
-      <div class="skill-card" style="animation-delay: 0.5s;">
-        <a href="https://github.com/hasaniftikhar" target="_blank">
-          <div class="skill-title">GitHub & Version Control</div>
-          <div class="skill-desc">Comfortable with Git, GitHub, and collaborative project workflows.</div>
-        </a>
+  <section class="about-section skills-section">
+    
+
+    <div>
+      <h1 class="section-heading">Skills</h1>
+      <p class="section-subtext">From programming languages to design tools, here’s what I bring to the table.</p>
+      <div class="skill-grid">
+        <div class="skill-card fade-in" style="animation-delay: 0s;">
+            <div class="skill-title">Python</div>
+            <div class="skill-desc">Used for scripting, automation, and backend development. Familiar with data structures and OOP.</div>
+          </a>
+        </div>
+        <div class="skill-card fade-in" style="animation-delay: 0.1s;">
+            <div class="skill-title">C++</div>
+            <div class="skill-desc">Strong understanding of algorithms and competitive programming foundations.</div>
+          </a>
+        </div>
+        <div class="skill-card fade-in" style="animation-delay: 0.2s;">
+            <div class="skill-title">HTML / CSS / JS</div>
+            <div class="skill-desc">Web development experience creating interactive, responsive, and animated pages.</div>
+          </a>
+        </div>
+        <div class="skill-card fade-in" style="animation-delay: 0.3s;">
+            <div class="skill-title">Graphic Design</div>
+            <div class="skill-desc">Skilled in Adobe Illustrator & Figma for vector work and layout composition.</div>
+          </a>
+        </div>
+        <div class="skill-card fade-in" style="animation-delay: 0.4s;">
+            <div class="skill-title">Poster & Logo Making</div>
+            <div class="skill-desc">Designed multiple creative assets for college fests and digital campaigns.</div>
+          </a>
+        </div>
+        <div class="skill-card fade-in" style="animation-delay: 0.5s;">
+            <div class="skill-title">GitHub & Version Control</div>
+            <div class="skill-desc">Comfortable with Git, GitHub, and collaborative project workflows.</div>
+          </a>
+        </div>
       </div>
     </div>
+  
   </section>
 </body>
 
 </html>
+ 

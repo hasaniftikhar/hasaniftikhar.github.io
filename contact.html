@@ -5,70 +5,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact | Hasan Iftikhar</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  <style>
-    #contact-section {
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      padding: 40px;
-    }
-
-    .contact-card {
-      background-color: #fff;
-      color: #333;
-      border-radius: 12px;
-      padding: 30px;
-      max-width: 700px;
-      width: 100%;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-      animation: fadeInUp 0.6s ease-in-out;
-    }
-
-    .contact-card h1 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-      color: #2c3e50;
-    }
-
-    .contact-card p {
-      font-size: 1rem;
-      margin-bottom: 20px;
-    }
-
-    .contact-list {
-      list-style: none;
-      padding-left: 0;
-    }
-
-    .contact-list li {
-      margin-bottom: 12px;
-      font-size: 1rem;
-    }
-
-    .contact-list a {
-      color: #1a73e8;
-      text-decoration: none;
-    }
-
-    .contact-list a:hover {
-      text-decoration: underline;
-    }
-
-    @keyframes fadeInUp {
-      0% {
-        opacity: 0;
-        transform: translateY(30px);
-      }
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-  </style>
 </head>
 
 <body>
@@ -78,22 +18,36 @@
       <li><a href="education.html">Education</a></li>
       <li><a href="portfolio.html">Design Portfolio</a></li>
       <li><a href="skills.html">Skills</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
     </ul>
   </nav>
 
-  <section id="contact-section">
-    <div class="contact-card">
-      <h1>Contact Me</h1>
-      <p>If you'd like to collaborate, discuss opportunities, or just say hi — feel free to reach out!</p>
-      <ul class="contact-list">
-        <li><strong>Email:</strong> <a href="mailto:hasaniftikhar6@gmail.com">hasaniftikhar6@gmail.com</a></li>
-        <li><strong>Location:</strong> Department of Computer Engineering, Jamia Millia Islamia, New Delhi, India</li>
-        <li><strong>GitHub:</strong> <a href="https://github.com/hasaniftikhar" target="_blank">github.com/hasaniftikhar</a></li>
-        <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/hasaniftikhar" target="_blank">linkedin.com/in/hasaniftikhar</a></li>
-      </ul>
+  <section class="about-section contact-section">
+  <div>
+    <h1 class="section-heading">Let's Connect</h1>
+    <p class="section-subtext">Feel free to reach out for design work, collaborations, or just to say hi 👋</p>
+
+    <div class="card contact-card">
+      <div class="contact-info">
+        <p><strong>Email:</strong> <a href="mailto:hasaniftikhar6@gmail.com">hasaniftikhar6@gmail.com</a></p>
+        <p><strong>Location:</strong> Department of Computer Engineering, Jamia Millia Islamia, New Delhi - 110025</p>
+      </div>
+<div class="social-links-textual">
+  <a href="https://github.com/hasaniftikhar" target="_blank">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
+    GitHub
+  </a>
+  <a href="https://in.linkedin.com/in/hasan-iftikhar-97b6ba325" target="_blank">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" />
+    LinkedIn
+  </a>
+</div>
+
     </div>
-  </section>
+  </div>
+</section>
+
+
 </body>
 
 </html>

@@ -3,6 +3,7 @@ body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
   background: 
+  url('assets/leather.png') repeat;
   linear-gradient(135deg, #fcfbf7, #fcfbf7);
   scroll-behavior: smooth;
   opacity: 0;
